@@ -1,11 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Locale;
 
 public class CalculadoraQuimica {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Calculadora de Massa Molar");
 
@@ -33,7 +32,7 @@ public class CalculadoraQuimica {
             System.out.print("  Nome do elemento (exemplo: H, O): ");
             String elemento = scanner.nextLine().toUpperCase();
 
-            System.out.print("  Massa atômica em u (exemplo: 1.008 para H): ");
+            System.out.print("  Massa atômica em u (exemplo: 1,008 para H): ");
             double massaAtomica = scanner.nextDouble();
             if (massaAtomica <= 0) {
                 System.out.println("Erro: Massa atômica deve ser positiva!");
